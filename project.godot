@@ -1,0 +1,56 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+_global_script_classes=[ {
+"base": "Node2D",
+"class": "MainScene",
+"language": "GDScript",
+"path": "res://Main/Main.gd"
+}, {
+"base": "Area2D",
+"class": "SortGraphNode",
+"language": "GDScript",
+"path": "res://Node/GraphNode.gd"
+}, {
+"base": "Area2D",
+"class": "SortGraphPath",
+"language": "GDScript",
+"path": "res://Path/GraphPath.gd"
+} ]
+_global_script_class_icons={
+"MainScene": "",
+"SortGraphNode": "",
+"SortGraphPath": ""
+}
+
+[application]
+
+config/name="SearchAlgorithms"
+run/main_scene="res://Main/Main.tscn"
+boot_splash/fullsize=false
+boot_splash/use_filter=false
+
+[display]
+
+window/size/width=1280
+window/size/height=720
+
+[global]
+
+background=false
+"clear color"=false
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
+environment/default_clear_color=Color( 0.0941176, 0.0901961, 0.101961, 1 )
+environment/default_environment="res://default_env.tres"
